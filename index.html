@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4fab76d03.js" crossorigin="anonymous"></script>
+    <title>Quiz app</title>
+</head>
+
+<body>
+    <!-- start quiz button -->
+    <div class="start_btn">
+        <button>开始答题</button>
+    </div>
+
+    <!-- info box -->
+    <div class="info_box">
+        <div class="info_title">
+            答题须知：
+        </div>
+        <div class="info_list">
+            <div class="info">1.你只有 <span>15秒</span>回答每个问题</div>
+            <div class="info">2.一旦你选择了某个选项，就不允许重新选择</div>
+            <div class="info">3.一旦超时，将不能选中</div>
+            <div class="info">4.你不能退出问答直到完成答题</div>
+            <div class="info">5.你的最终得分基于你回答的正确率</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">退出</button>
+            <button class="restart">继续</button>
+        </div>
+    </div>
+
+    <!-- quiz box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">
+                知识问答：
+            </div>
+            <div class="timer">
+                <div class="time_text">剩余时间：</div>
+                <div class="time_left">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>百老汇的昵称不是:</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>宽街</span>
+                    <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>西区</span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></i></div>
+                </div>
+                <div class="option">
+                    <span>白色大道</span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></i></div>
+                </div>
+                <div class="option">
+                    <span>不夜街</span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></i></div>
+                </div> -->
+            </div>
+        </section>
+        <!-- box footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span>
+                    <p>2</p>
+                    of
+                    <p>5</p>
+                    questions
+                </span> -->
+            </div>
+            <button class="next_btn">下一题</button>
+        </footer>
+    </div>
+
+    <!-- result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="complete_text">
+            你已经完成答题！
+        </div>
+        <div class="score_text">
+            <!-- <span>抱歉，你只完成</span>
+            <p>5</p>分之
+            <p>2</p> -->
+        </div>
+        <div class="result_buttons">
+            <button class="restart">重新开始</button>
+            <button class="quit">退出</button>
+        </div>
+    </div>
+
+    <script src="./js/questions.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
